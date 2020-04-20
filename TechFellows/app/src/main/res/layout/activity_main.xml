@@ -30,6 +30,8 @@
         android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/btnAdd"
         android:ems="10"
+        android:inputType="text"
+        android:importantForAutofill="no"
         android:hint="@string/hint" />
 
     <androidx.recyclerview.widget.RecyclerView

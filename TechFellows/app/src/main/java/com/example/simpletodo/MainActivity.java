@@ -1,17 +1,25 @@
 package com.example.simpletodo;
 
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import com.google.android.material.snackbar.Snackbar;
 
-import java.util.List;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.List;
+//import android.os.FileUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnAdd;
     EditText etItem;
     RecyclerView rvItems;
+    ItemsAdapter itemsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +40,25 @@ public class MainActivity extends AppCompatActivity {
         etItem = findViewById(R.id.etItem);
         rvItems = findViewById(R.id.rvitems);
 
+        loadItems();
+
 //        etItem.setText("Im doing this from the java file.");
+//         new Empty Array List
+//        items = new ArrayList<>();
 
-        items = new ArrayList<>();
-        items.add("Buy Milk");
-        items.add("Go to the gym");
-        items.add("Have Fun!");
+        ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
+            @Override
+            public void onItemLongClicked(int position) {
+                // Delete the item from the model
+                items.remove(position);
+                // Notify the adapter
+                itemsAdapter.notifyItemRemoved(position);
+                Snackbar.make(findViewById(R.id.btnAdd),"Item successfully removed ", Snackbar.LENGTH_SHORT).show();
+                saveItems();
+            }
+        };
 
-        final ItemsAdapter itemsAdapter = new ItemsAdapter(items);
+        itemsAdapter = new ItemsAdapter(items, onLongClickListener);
         rvItems.setAdapter(itemsAdapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
 
@@ -49,14 +69,44 @@ public class MainActivity extends AppCompatActivity {
                 // Add item to the Model
                 items.add(todoItem);
                 // Notify adapter that an item is inserted
-                itemsAdapter.notifyItemInserted(items.size()-1);
+                itemsAdapter.notifyItemInserted(items.size() - 1);
                 // Clear the edit text once submitted
                 etItem.setText("");
-                // Instead of a toat, I decided to use a snackbar
-                Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
+                // Instead of a toast, I decided to use a snackbar
+//                Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
+                Snackbar.make(findViewById(R.id.btnAdd),"Item successfully added ", Snackbar.LENGTH_SHORT).show();
+                saveItems();
             }
         });
 
 
     }
+
+    // Outside of on create
+    // returns file of list
+    private File getDataFile(){
+        return new File(getFilesDir(), "data.txt");
+    }
+    // This function will load items by reading every line of the data file
+    private void loadItems(){
+        try {
+            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
+        } catch (IOException e) {
+//            e.printStackTrace();
+            Log.e("Main Activity", "Error reading items", e);
+            items = new ArrayList<>();
+
+        }
+    }
+    // This function saves items by writing them into the data file
+    private void saveItems(){
+        try {
+            FileUtils.writeLines(getDataFile(), items);
+        } catch (IOException e) {
+//            e.printStackTrace();
+            Log.e("Main Activity", "Error Writing Items", e);
+        }
+    }
+
+
 }
