@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlashingSquirrel</string>
+    <string name="flashcard_question">What type of Bear is Best?</string>
+    <string name="flashcard_answer">False! Black Bear</string>
+    <string name="brown_bear">Brown Bear</string>
+    <string name="black_bear">Black Bear</string>
+    <string name="gray_bear">Gray Bear</string>
+    <string name="question_hint">Enter The Question Here</string>
+    <string name="answer_hint">Enter The Answer Here</string>
+    <string name="empty_space"> </string>
+</resources>

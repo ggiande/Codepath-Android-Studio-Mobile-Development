@@ -1,0 +1,33 @@
+###
+Creating a successful virtual machine in Android Studio for AMD Chips
+###
+Run Android Studio x86 Hardware Accelerated Emulator on AMD Ryzen Processor using Microsoft Hyper-V
+x86 Harware Accelerated Emulator is much more efficent than most other available images
+
+
+Task Manager > CPU 
+- Ensure that Virtualization is enabled. 
+
+If not, go to BIOS and enable SVM (Support Vector Machine)
+
+Gigabyte: BIOS (In Classic) > M.I.T > Advanced CPU Core Settings > SVM Mode
+- Enabled 
+
+Save & Exit Setup
+	
+
+Control Panel > All Control Panel Items > Programs and Features > Turn Windows features on or off
+- Enable HyperV (Box MUST be selected)
+- Enable Windows Hypervisor Platform
+- PC will be automatically restarted
+
+System Configuration > Services
+- Enable Hyper-V Host Computer Service
+
+
+*If at this point, android spews out Error: X86 emulation currently requires hardware acceleration
+
+Task Manager > Services > Open Servies
+- For all Hyper-V Services, go to properties and change start up type and chyange it to automatic.
+- Proceed to restart PC
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Customize your theme here. PrimaryDark is what's used for the top of the app-->
+        <item name="colorPrimary">@color/OrangeRed</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/navyBlue</item>
+    </style>
+</resources>

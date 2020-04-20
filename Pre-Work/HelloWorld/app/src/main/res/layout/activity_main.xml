@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_gray_light"
+    android:id="@+id/main_Background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="138dp"
+        android:text="@string/hello_from_giancarlo"
+        android:textColor="@android:color/black"
+
+        android:textSize="25sp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:importantForAutofill="no"
+        />
+<!--   android:backgroundTint-->
+
+
+    <Button
+        android:id="@+id/textColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="184dp"
+        android:text="@string/change_text_color" />
+
+    <Button
+        android:id="@+id/buttonForDefaultTextString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="181dp" />
+
+    <Button
+        android:id="@+id/paintBackground"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="168dp"
+        android:layout_toStartOf="@+id/textColorButton"
+        android:background="@drawable/paint_bucket_ic"
+        android:text="@string/emptySpace"
+        />
+</RelativeLayout>

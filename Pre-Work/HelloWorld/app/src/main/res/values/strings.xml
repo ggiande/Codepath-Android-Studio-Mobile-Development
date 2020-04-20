@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloGiancarlo</string>
+    <string name="hello_from_giancarlo">Hello from Giancarlo!</string>
+    <string name="change_text_color">Change Text Color</string>
+    <string name="emptySpace"> </string>
+    <string name="dedicatedButtonString">Android is Awesome!</string>
+</resources>
