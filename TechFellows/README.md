@@ -2,7 +2,7 @@
 
 ### SimpleTodo
 [About]
-<img src="https://i.imgur.com/Q3J8sSD.gif" width=400><br> # Link to imgur for gif 
+<img src="https://i.imgur.com/CFOMS8Q.gif" width=400><br> # Link to imgur for gif 
 
 GIF created with [LiceCap](https://www.cockos.com/licecap/). - simple animated screen captures
 
