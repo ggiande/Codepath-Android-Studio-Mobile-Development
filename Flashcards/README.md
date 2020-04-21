@@ -3,7 +3,7 @@
 ### App Description
 New feature consists of animations between the transitions to the next card, adding a card, and switching between the answer and the question. The application now has a launcher icon.
 
-### App Walk-though
+### App Walk-through
 <img src="https://i.imgur.com/toRVLaY.gif" width=200><br>
 
 ## Required
@@ -12,7 +12,7 @@ New feature consists of animations between the transitions to the next card, add
 - [X] User sees flashcards animating in / out when the 'next' button is tapped
 
 ## Optional
-- [ ] Extra styling is added!
+- [X] Extra styling is added!
 - [ ] User sees a countdown timer for each question
 - [ ] User sees a 'card flip' animation when the card is tapped
 - [ ] User sees a celebration animation with confetti when they answer a question correctly
@@ -22,7 +22,7 @@ New feature consists of animations between the transitions to the next card, add
 ### App Description
 New features allows users to create their own flashcards and save them in a persistent container. Additionally, users can now delete a selected flashcard based on the one that they are viewing. The application now allows the users to traverse through all the flashcards. 
 
-### App Walk-though
+### App Walk-through
 
 <img src="https://i.imgur.com/Z87YIfG.gif" width=200><br>
 
@@ -41,7 +41,7 @@ New features allows users to create their own flashcards and save them in a pers
 ### App Description
 New features allows users to create their own flashcard. New card replaces the card in main.
 
-### App Walk-though
+### App Walk-through
 <img src="https://i.imgur.com/l643rXq.gif" width=200><br>
 
 ## Required
@@ -64,7 +64,7 @@ New features allows users to create their own flashcard. New card replaces the c
 This flashcard mobile application implements OnClickListener events and reflects the answer to a flashcard question after the user taps on the question. Additional features will be reflected down below.
 Note: FlashingSquirrels has absolutely nothing to do with squirrels. If you understand the reference about the bear, then you're pretty cool!
 
-### App Walk-though
+### App Walk-through
 <img src="https://i.imgur.com/FiddGsh.gif" width=200><br>
 
 ## Required

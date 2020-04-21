@@ -13,8 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -58,8 +56,11 @@ public class MainActivity extends AppCompatActivity {
                 items.remove(position);
                 // Notify the adapter
                 itemsAdapter.notifyItemRemoved(position);
-                Snackbar.make(findViewById(R.id.btnAdd),"Item successfully removed ", Snackbar.LENGTH_SHORT).show();
+//                Snackbar.make(findViewById(R.id.btnAdd),"Item successfully removed ", Snackbar.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Item was removed", Toast.LENGTH_SHORT).show();
+
                 saveItems();
+
             }
         };
 
