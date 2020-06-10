@@ -16,7 +16,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:ems="10"
-        android:hint="Update the item " />
+        android:hint="@string/update_the_item_string" />
 
     <Button
         android:id="@+id/btnSave"
@@ -26,5 +26,5 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
-        android:text="SAVE" />
+        android:text="@string/save_string" />
 </RelativeLayout>
