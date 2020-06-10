@@ -46,7 +46,7 @@ GET Requests - Used to request data from a specified resource.
 * [Android Studio Canary](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
 
 ## Android Studio Projects
-* All android studio projects are created in android studio canary using an [AMD Machine](https://github.com/ggiande/AMD-Chip-on-Android-Studio).
+* All android studio projects are created in android studio canary using an [AMD Machine](https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/tree/master/AMD-Chip-on-Android-Studio).
 
 ## Authors
 * **Giancarlo Garcia**
