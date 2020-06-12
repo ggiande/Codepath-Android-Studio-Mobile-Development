@@ -20,9 +20,9 @@ A user story is a way to cpature requirements for an app from an end-user perspe
 
 ### App Walkthough GIF
 ## Portrait Mode
-<img src="https://i.imgur.com/GcEifCW.gif" width=200><br>
+<img src="https://i.imgur.com/m7k9hZd.gif" width=200><br>
 ## Landscape Mode
-<img src="https://i.imgur.com/7d1jyfm.gif" width=200><br>
+<img src="https://i.imgur.com/NkCkCy7.gif" height=200><br>
 
 ### Notes
 - Struggled in implementing a transparent logo utilizing adaptive icons.
