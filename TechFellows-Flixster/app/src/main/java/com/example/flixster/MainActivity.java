@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Network Requests are Asynchronous -> Response Handler
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() { //Movie DB Communicates w/ JSON< so we utlize this handler
+        client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() { //Movie DB Communicates w/ JSON< so we utilize this handler
 
 
             @Override
