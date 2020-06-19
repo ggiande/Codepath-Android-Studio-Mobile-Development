@@ -6,26 +6,27 @@ Running Android Studio x86 on AMD Ryzen Processor using Microsoft Hyper-V
 x86 Harware Accelerated Emulator is much more efficent than most other available images. 
 
 ## Prerequisites
-* <img src="http://www.iconarchive.com/download/i75939/martz90/circle/windows-8.ico" width="25" height="25"> Android Studio Canary 8 Build (https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
+![CoreSettings](images/CoreSettings.JPG) [Android Studio Canary 8 Build](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
 
 Here are a list of steps to ensure that your machine is fully capable of running Virtualization.
 
 
 Check if Virtualization is enabled inside of our machine by navigating to the Task Manager, Performance, CPU, Virtualization: *Enabled*
+
 Use the provided image for guidance if needed.
-![TaskVirtulization.png]()
+![TaskVirtulization.png](images/TaskVirtualization.png)
 
 If Virtualization is not enabled then the next step is to enable it within the machine's BIOS.
 
 For the purposes of demonstration, a Gigabyte motherboard would have the SVM (Support Vector Machine) hidden within M.I.T 
-![MIT.png]()
+![MIT.png](images/MIT.JPG)
 > Advanced CPU Core Settings
 
-![CoreSettings](https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/blob/master/AMD-Chip-on-Android-Studio/images/CoreSettings.JPG")
+![CoreSettings](images/CoreSettings.JPG)
 
 SVM Mode: Enabled
 
-![EnableSVM](AMD-Chip-on-Android-Studio/images/EnableSVM.JPG)
+![EnableSVM](images/EnableSVM.JPG)
 
 Save & Exit Setup 
 
