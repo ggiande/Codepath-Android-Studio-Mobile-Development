@@ -6,7 +6,9 @@ Running Android Studio x86 on AMD Ryzen Processor using Microsoft Hyper-V
 x86 Harware Accelerated Emulator is much more efficent than most other available images. 
 
 ## Prerequisites
-![CoreSettings](images/CoreSettings.JPG) [Android Studio Canary 8 Build](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
+<img src="images/canary.png" width="125">
+
+- [Android Studio Canary 8 Build](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
 
 Here are a list of steps to ensure that your machine is fully capable of running Virtualization.
 
