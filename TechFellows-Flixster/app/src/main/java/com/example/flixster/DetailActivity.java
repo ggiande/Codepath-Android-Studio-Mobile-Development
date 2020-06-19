@@ -40,14 +40,13 @@ public class DetailActivity extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvOverview = findViewById(R.id.tvOverview);
         ratingBar = findViewById(R.id.ratingBar);
-        YouTubePlayerFragment youtubeFragment = (YouTubePlayerFragment)
-                getFragmentManager().findFragmentById(R.id.youtubeFragment);
 
-        //        String title = getIntent().getStringExtra("title");
+//      String title = getIntent().getStringExtra("title");
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
+        Log.d("DetailActivity", "ratingBar: " + ratingBar);
 
 
         // Network Requests are Asynchronous -> Response Handler
