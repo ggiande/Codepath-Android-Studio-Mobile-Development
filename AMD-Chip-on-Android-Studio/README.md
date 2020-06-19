@@ -10,27 +10,29 @@ x86 Harware Accelerated Emulator is much more efficent than most other available
 
 - [Android Studio Canary 8 Build](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
 
-Here are a list of steps to ensure that your machine is fully capable of running Virtualization.
+### Here are a list of steps to ensure that your machine is fully capable of running Virtualization.
 
 
-Check if Virtualization is enabled inside of our machine by navigating to the Task Manager, Performance, CPU, Virtualization: *Enabled*
+- Check if Virtualization is enabled inside of our machine by navigating to the Task Manager, Performance, CPU, Virtualization: *Enabled*
 
-Use the provided image for guidance if needed.
+- Use the provided image for guidance if needed.
 ![TaskVirtulization.png](images/TaskVirtualization.png)
 
-If Virtualization is not enabled then the next step is to enable it within the machine's BIOS.
+- If Virtualization is not enabled then the next step is to enable it within the machine's BIOS.
 
 For the purposes of demonstration, a Gigabyte motherboard would have the SVM (Support Vector Machine) hidden within M.I.T 
 ![MIT.png](images/MIT.JPG)
-> Advanced CPU Core Settings
+- Go to Advanced CPU Core Settings
 
 ![CoreSettings](images/CoreSettings.JPG)
 
-SVM Mode: Enabled
+- SVM Mode: Enabled
 
 ![EnableSVM](images/EnableSVM.JPG)
 
-Save & Exit Setup 
+- Save & Exit Setup 
+
+### Should be all done! If steps were completed successfully, Android Studio Canary will now be supported by your CPU.
 
 
 
