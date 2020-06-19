@@ -13,22 +13,23 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.parceler.Parcels;
-
-import java.security.KeyPairGenerator;
-
 import okhttp3.Headers;
+
+// Import for API Key
 
 public class DetailActivity extends AppCompatActivity {
     /* We make a request ot the new endpoint, and parse each object, and parse for the key. We only initialize youtube until after we get the key from the Movie DB*/
-    private static final String YOUTUBE_API_KEY = "AIzaSyAQ8GvC2Dt_hMUXPfY1bd9TojKQP4gdyN4";
-    public static String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+    private static final String YOUTUBE_API_KEY = BuildConfig.CONSUMER_KEY;
+
+//  Movie DB API Commented out, in file.
+    public static String VIDEOS_URL = BuildConfig.CONSUMER_SECRET;
 
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;
     YouTubePlayerFragment youtubeFragment;
-//    YouTubePlayerView youTubePlayerView; We do not use the class of YoutubePlayerView, we use the fragment
-//        Using fragment instead of extending class
+//   YouTubePlayerView youTubePlayerView; We do not use the class of YoutubePlayerView, we use the fragment
+//   Using fragment instead of extending class
 
 
     @Override
