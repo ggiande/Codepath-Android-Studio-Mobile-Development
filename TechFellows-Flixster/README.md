@@ -2,7 +2,7 @@
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 ### User Stories
-A user story is a way to capture requirements for an app from an end-user perspective. User stories are common parctice in app development and help to simplify the way requirements are specified. 
+A user story is a way to capture requirements for an app from an end-user perspective. User stories are common practice in app development and help to simplify the way requirements are specified. 
 
 ## Flix Part 2
 
