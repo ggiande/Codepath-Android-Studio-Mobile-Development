@@ -11,8 +11,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
+import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import org.json.JSONArray;
@@ -21,8 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 import okhttp3.Headers;
 
-
-import static android.app.ActionBar.DISPLAY_SHOW_CUSTOM;
 
 public class TimelineActivity extends AppCompatActivity {
 
@@ -130,6 +131,8 @@ public class TimelineActivity extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
             Log.e(TAG, "onFailure" + response, throwable);
+            // Empty State goes here
+
             }
         });
     }
