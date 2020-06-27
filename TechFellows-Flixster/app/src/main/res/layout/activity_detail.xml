@@ -5,15 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
     android:orientation="vertical">
-
 
     <fragment
         android:id="@+id/youtubeFragment"
         android:name="com.google.android.youtube.player.YouTubePlayerFragment"
         android:layout_width="match_parent"
-        android:layout_height="250dp"></fragment>
+        android:layout_height="250dp" />
 
     <TextView
         android:id="@+id/tvTitle"

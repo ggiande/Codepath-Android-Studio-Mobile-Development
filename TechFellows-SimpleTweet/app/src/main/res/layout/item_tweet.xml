@@ -6,30 +6,51 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
-    <ImageView
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DimGray"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginBottom="10dp"
+        app:riv_corner_radius="120dip"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvScreenName"
+        android:textColor="@color/White"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="at Lorem" />
 
     <TextView
         android:id="@+id/tvBody"
+        android:textColor="@color/White"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/tvScreenName"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="Lorem Ipsum" />
+
 
 </RelativeLayout>

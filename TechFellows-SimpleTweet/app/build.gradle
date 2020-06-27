@@ -56,4 +56,8 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.1'
     // Pull to refresh
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    //  Rounded Images
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    // App Tool Bar
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 }
