@@ -3,11 +3,10 @@
 
     <!--  Twitter Blue  -->
     <color name="twitter_blue">	#1DA1F2</color>
-    <!--    Background  -->
-    <color name="colorPrimary">#191F20</color>
-    <!--    Nav Bar    -->
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#03DAC5</color>
+
+    <color name="toolbar">#233446</color>
+    <color name="background">#1b2936</color>
+    <color name="BotNavBar">#192533</color>
 
     <!--    Stroke  -->
     <color name = "Stroke">#4F5A5A</color>
@@ -15,7 +14,6 @@
     <!--    Text Color  -->
     <color name="text">#8F999C</color>
     <color name="title">#D5E4E8</color>
-
 
 
     <color name="pinkOne">#FFCDEF</color>

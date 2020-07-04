@@ -3,9 +3,9 @@
     <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowLightStatusBar">false</item>
         <!--    Top Nav Bar     -->
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
         <!--    Bottom Nav Bar     -->
-        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/BotNavBar</item>
 
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/OrangeRed</item>

@@ -7,5 +7,9 @@
     <string name="intent_host">cprest</string>
     <string name="twitter_logo">logo</string>
     <string name="logo_string">logo</string>
+    <string name="compose_string">Compose</string>
+    <string name="compose_tweet_string">What\'s happening?</string>
+    <string name="tweetthis_string">Tweet</string>
+    <string name="avatar_replace_string">Replace this with the actual avatar</string>
 
 </resources>

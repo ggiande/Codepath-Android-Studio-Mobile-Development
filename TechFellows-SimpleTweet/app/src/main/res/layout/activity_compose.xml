@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".ComposeActivity">
+
+
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="56dp"
+
+        android:height="45dp"
+        android:background="@drawable/roundshapebtn"
+        android:backgroundTint="@color/twitter_blue"
+        android:text="@string/tweetthis_string"
+        android:textColor="@color/White" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:backgroundTint="@color/DimGray"
+        android:textColor="@color/White"
+        android:textColorHint="@color/DimGray"
+        app:counterEnabled="true"
+        app:counterMaxLength="140">
+
+        <EditText
+            android:id="@+id/etCompose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnTweet"
+            android:autofillHints="true"
+
+            android:ems="10"
+            android:hint="@string/compose_tweet_string"
+
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+</RelativeLayout>
