@@ -68,7 +68,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     // Define a view holder
     public class ViewHolder extends RecyclerView.ViewHolder {
-
+        TextView timeStamp;
         ImageView ivProfileImage;
         TextView tvBody;
         TextView tvScreenName;

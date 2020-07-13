@@ -146,9 +146,6 @@ public class TimelineActivity extends AppCompatActivity {
                 Log.i(TAG, "onFailure for loadMoreData!", throwable);
             }
         }, tweets.get(tweets.size()-1).id);
-
-
-
     }
 
 

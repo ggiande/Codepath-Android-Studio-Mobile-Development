@@ -11,5 +11,6 @@
     <string name="compose_tweet_string">What\'s happening?</string>
     <string name="tweetthis_string">Tweet</string>
     <string name="avatar_replace_string">Replace this with the actual avatar</string>
+    <string name="timestamp_string">timestamp</string>
 
 </resources>

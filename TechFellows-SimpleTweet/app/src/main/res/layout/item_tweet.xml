@@ -26,14 +26,12 @@
 
     <TextView
         android:id="@+id/tvScreenName"
-        android:textColor="@color/White"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="@color/White"
         tools:text="at Lorem" />
 
     <TextView
@@ -51,6 +49,17 @@
 
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="Lorem Ipsum" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        android:textColor="#FFFFFF"
+        tools:text="@string/timestamp_string" />
 
 
 </RelativeLayout>
