@@ -1,7 +1,0 @@
-    <resources>
-    <string name="app_name">Instaclone</string>
-    <string name="instagram_string">Instagram</string>
-    <string name="username_string">Phone number, username or email</string>
-    <string name="password_string">Password</string>
-    <string name="log_in_string">Log In</string>
-</resources>
