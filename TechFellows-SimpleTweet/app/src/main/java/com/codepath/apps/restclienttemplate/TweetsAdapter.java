@@ -78,6 +78,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
+            timeStamp = itemView.findViewById(R.id.timeView);
         }
 
         public void bind(Tweet tweet) {
@@ -87,6 +88,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvScreenName.setText(tweet.user.screenName);
             // We use glide for not string objects
             Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
+            // Bind the timestamp
+            timeStamp.setText(tweet.relativeTimeStamp());
 
         }
     }

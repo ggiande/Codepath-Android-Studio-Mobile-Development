@@ -4,4 +4,8 @@
     <string name="username_string">Phone number, username or email</string>
     <string name="password_string">Password</string>
     <string name="log_in_string">Log In</string>
+    <string name="submit_String">Submit</string>
+    <string name="take_picture_String">Take Picture</string>
+    <string name="ivPosterImage_desc">Holds the photo that was taken after being captured</string>
+    <string name="create_user_string">Create User</string>
 </resources>

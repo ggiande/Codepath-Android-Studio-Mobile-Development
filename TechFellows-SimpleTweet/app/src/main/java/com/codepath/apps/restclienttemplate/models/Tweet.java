@@ -8,6 +8,8 @@ import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import com.codepath.apps.restclienttemplate.TimeFormatter;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,11 +53,13 @@ public class Tweet {
         tweet.body = jsonObject.getString("text");
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.id = jsonObject.getLong("id");
-
         User user = User.fromJson(jsonObject.getJSONObject("user")); // getJSONObject insrtead of string because User is an object, not a string
         tweet.user = user;
         tweet.userId = user.id;
         return tweet;
+    }
+    public String relativeTimeStamp(){
+        return TimeFormatter.getTimeDifference(createdAt);
     }
     
     public static List<Tweet> fromJsonArray(JSONArray jsonArray) throws JSONException {

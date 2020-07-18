@@ -56,5 +56,15 @@
         android:textStyle="bold"
         />
 
+    <Button
+        android:id="@+id/etButtonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/create_user_string"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
 </LinearLayout>
