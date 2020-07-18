@@ -17,9 +17,9 @@ The following **required** functionality is completed:
   - [X] User can **see a counter with total number of characters left for tweet** on compose tweet page
 ###
 - [X] User can **sign in to Twitter** using OAuth login
-- [X]	User can **view tweets from their home timeline**
-  - [X] User is displayed the username, name, and body for each tweet
-  - [ ] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
+- [X] User can **view tweets from their home timeline**
+- [X] User is displayed the username, name, and body for each tweet
+- [X] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
 - [X] User can refresh tweets timeline by pulling down to refresh
 
 The following **optional** features are implemented:
@@ -56,7 +56,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src="https://i.imgur.com/hQrjYNW.gif" width="250" alt="Video Walkthrough" />
+<img src="https://i.imgur.com/NKS44cM.gif" width="250" alt="Video Walkthrough" />
 <img src="https://i.imgur.com/AmKuOXr.gif" width="250" alt="Video Walkthrough" />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

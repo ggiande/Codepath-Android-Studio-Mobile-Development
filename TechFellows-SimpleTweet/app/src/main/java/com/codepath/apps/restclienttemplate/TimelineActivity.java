@@ -53,6 +53,11 @@ public class TimelineActivity extends AppCompatActivity {
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false); // Used to hide the name off the app on the tool bar
+        //toolbar.setNavigationIcon(R.drawable.ic_toolbar);
+        toolbar.setTitle("");
+        toolbar.setSubtitle("");
+        //toolbar.setLogo(R.drawable.ic_toolbar);
 
         client = TwitterApp.getRestClient(this);   // An instance of the twitter client
 
