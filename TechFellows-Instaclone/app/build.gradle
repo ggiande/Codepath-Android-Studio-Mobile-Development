@@ -39,6 +39,8 @@ dependencies {
     // dependencies for Parse
     implementation 'com.github.parse-community.Parse-SDK-Android:parse:1.24.2'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
-    // for logging API calls to LogCat
+    // for design support library
+    implementation "androidx.appcompat:appcompat:${appCompatVersion}"
+    implementation "com.google.android.material:material:${designSupportVersion}"
 
 }
