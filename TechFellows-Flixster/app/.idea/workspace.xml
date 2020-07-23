@@ -5,14 +5,26 @@
       <config />
     </shared>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f9c82d6-6393-4559-b142-65dce5072896" name="Default Changelist" comment="" />
+    <list default="true" id="3f9c82d6-6393-4559-b142-65dce5072896" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-PreWork/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-PreWork/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_XL_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -36,7 +48,6 @@
   <component name="ProjectId" id="1ds6ln87AnM5tdEz5OxuqJdQS4e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -58,6 +69,7 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -93,27 +105,20 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
