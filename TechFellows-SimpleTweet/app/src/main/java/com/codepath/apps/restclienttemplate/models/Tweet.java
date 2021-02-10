@@ -27,7 +27,6 @@ import java.util.Locale;
 
 public class Tweet {
 
-
     @ColumnInfo
     @PrimaryKey
     public long id;
@@ -58,6 +57,7 @@ public class Tweet {
         tweet.userId = user.id;
         return tweet;
     }
+
     public String relativeTimeStamp(){
         return TimeFormatter.getTimeDifference(createdAt);
     }
@@ -68,6 +68,5 @@ public class Tweet {
             tweets.add(fromJSON(jsonArray.getJSONObject(i)));
         }
         return tweets;
-
     }
 }

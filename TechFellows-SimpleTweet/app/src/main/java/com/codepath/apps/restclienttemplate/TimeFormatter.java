@@ -12,6 +12,7 @@ import java.util.Locale;
  * depending on how great the time difference between now and the given date is.
  * This, as of 2016-06-29, matches the behavior of the official Twitter app.
  */
+
 public class TimeFormatter {
     public static String getTimeDifference(String rawJsonDate) {
         String time = "";

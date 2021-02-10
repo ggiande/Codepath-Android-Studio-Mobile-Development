@@ -7,7 +7,6 @@ import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
-
 import java.util.List;
 
 public class ProfileFragment extends PostsFragment {
@@ -35,7 +34,7 @@ public class ProfileFragment extends PostsFragment {
                 }
                 allPosts.addAll(posts);
                 adapter.notifyDataSetChanged();
-
+                swipeContainer.setRefreshing(false);
             }
         });
 

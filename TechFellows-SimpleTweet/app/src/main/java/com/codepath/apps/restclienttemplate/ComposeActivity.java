@@ -32,13 +32,11 @@ public class ComposeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose);
-
         etCompoe = findViewById(R.id.etCompose);
         btnTweet = findViewById(R.id.btnTweet);
 
         client = TwitterApp.getRestClient(this);
 //        btnTweet.setEnabled(false); // Make button off
-
 
         // Set a click listener on button
         btnTweet.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +66,6 @@ public class ComposeActivity extends AppCompatActivity {
                             // set result code and bundle data for response
                             intent.putExtra("tweet", Parcels.wrap(tweet));
                             // closes the activity, pass data to parent
-
                             setResult(RESULT_OK, intent);
                             finish();
                         } catch (JSONException e) {
@@ -79,13 +76,9 @@ public class ComposeActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
                         Log.e(TAG, "onFailure to publish tweet" );
-
                     }
                 });
             }
         });
-
-
-
     }
 }

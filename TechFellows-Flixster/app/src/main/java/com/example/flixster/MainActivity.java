@@ -9,7 +9,6 @@ import android.util.Log;
 
 //Network Requests
 import com.codepath.asynchttpclient.AsyncHttpClient;
-import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.adapters.MovieAdapter;
 import com.example.flixster.models.Movie;
@@ -25,8 +24,9 @@ import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
     // constant var for api url
-    public static final String  NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
-    public static final String TAG= "MainActivity";
+    public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+
+    public static final String TAG = "MainActivity";
 
     List<Movie> movies;
 
@@ -39,18 +39,14 @@ public class MainActivity extends AppCompatActivity {
 
 //      Create the adapter
         final MovieAdapter movieAdapter = new MovieAdapter(this, movies);
-
 //      Set the adapter on the recycler view
         rvMovies.setAdapter(movieAdapter);
 //      Set a layout manager on the recycler view
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
-
         // Network Requests are Asynchronous -> Response Handler
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() { //Movie DB Communicates w/ JSON< so we utilize this handler
-
-
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
                 Log.d("TAG", "onSuccess, Connection established");
@@ -62,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
                     movies.addAll(Movie.fromJsonArray(results));
                     movieAdapter.notifyDataSetChanged();
                     Log.i(TAG, "Movies: "+ movies.size());
-
-
-
                 } catch (JSONException e) {
 //                    e.printStackTrace();
                     Log.e(TAG, "Hit json exception", e);
@@ -73,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
                 Log.d(TAG, "onFailure, Connection not established");
-
             }
         });
     }

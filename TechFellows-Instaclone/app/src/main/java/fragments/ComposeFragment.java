@@ -63,8 +63,6 @@ public class ComposeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-
-
     public ComposeFragment() {
         // Required empty public constructor
     }
@@ -160,6 +158,8 @@ public class ComposeFragment extends Fragment {
             startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         }
     }
+
+
     // Invoked when the cam app returns to main
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -198,6 +198,7 @@ public class ComposeFragment extends Fragment {
     private void savePost(String description, ParseUser currentUser, File photoFile) {
         Post post = new Post();
         post.setDescription(description);
+
         post.setImage(new ParseFile(photoFile));
         post.setUser(currentUser);
         post.saveInBackground(new SaveCallback() {

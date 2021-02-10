@@ -18,8 +18,17 @@ public class ParseApplication extends Application {
         // clientKey is not needed unless explicitly configured
         // any network interceptors must be added with the Configuration Builder given this syntax
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("gian-parstagram") // should correspond to APP_ID env variable
-                .clientKey("CPMKOVERPARSEG485645gvyfvg_$^#")  // set explicitly unless clientKey is explicitly configured on Parse server
-                .server("https://gian-parstagram.herokuapp.com/parse").build());
+                .applicationId("gZJT0sklccbOmHDSDtM7uAqWVXvmarZRAAQvGuSm")
+                .clientKey("9Cb0lHK7O34LMLjjEfgp3vUQPvOV3viJ3QMQhZcs")
+                .server("https://parseapi.back4app.com")
+                .build()
+        );
+
+        // OLD USING HEROKU
+//        Parse.initialize(new Parse.Configuration.Builder(this)
+//                .applicationId("gian-parstagram") // should correspond to APP_ID env variable
+//                .clientKey("CPMKOVERPARSEG485645gvyfvg_$^#")  // set explicitly unless clientKey is explicitly configured on Parse server
+//                .server("https://gian-parstagram.herokuapp.com/parse")
+//                .build());
     }
 }

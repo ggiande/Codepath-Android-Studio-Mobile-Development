@@ -90,7 +90,6 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
             // Bind the timestamp
             timeStamp.setText(tweet.relativeTimeStamp());
-
         }
     }
 }

@@ -16,5 +16,4 @@ public interface TweetDao {
     void insertModel(Tweet... tweets);
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertModel(User... users);
-
 }

@@ -1,12 +1,10 @@
 <resources>
 
     <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowLightStatusBar">false</item>
         <!--    Top Nav Bar     -->
         <item name="colorPrimaryDark">@color/white</item>
         <!--    Bottom Nav Bar     -->
         <item name="android:navigationBarColor">@color/BotNavBar</item>
-
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/OrangeRed</item>
         <item name="colorAccent">@color/OrangeRed</item>
@@ -16,15 +14,8 @@
             backward-compatibility can go here.
         -->
     </style>
-
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
-
-
-
-
-
 </resources>

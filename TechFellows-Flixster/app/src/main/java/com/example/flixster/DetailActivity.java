@@ -22,12 +22,10 @@ public class DetailActivity extends AppCompatActivity {
     private static final String YOUTUBE_API_KEY = BuildConfig.CONSUMER_KEY;
 
 //  Movie DB API Commented out, in file.
-    public static String VIDEOS_URL = BuildConfig.CONSUMER_SECRET;
-
+    private static String VIDEOS_URL = BuildConfig.CONSUMER_SECRET;
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;
-    YouTubePlayerFragment youtubeFragment;
 //   YouTubePlayerView youTubePlayerView; We do not use the class of YoutubePlayerView, we use the fragment
 //   Using fragment instead of extending class
 
@@ -41,9 +39,9 @@ public class DetailActivity extends AppCompatActivity {
         tvOverview = findViewById(R.id.tvOverview);
         ratingBar = findViewById(R.id.ratingBar);
 
-//      String title = getIntent().getStringExtra("title");
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
+
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
         Log.d("DetailActivity", "ratingBar: " + ratingBar);
@@ -88,8 +86,8 @@ public class DetailActivity extends AppCompatActivity {
                         // do any work here to cue video, play video, etc.
                         youTubePlayer.cueVideo(youtubeKey);
                         Log.d("DetailActivity", "onInitializationSuccess");
-
                     }
+
                     @Override
                     public void onInitializationFailure(YouTubePlayer.Provider provider,
                                                         YouTubeInitializationResult youTubeInitializationResult) {

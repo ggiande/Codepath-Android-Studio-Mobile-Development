@@ -1,4 +1,5 @@
 package com.codepath.apps.restclienttemplate;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,12 +24,14 @@ import com.codepath.apps.restclienttemplate.models.TweetDao;
 import com.codepath.apps.restclienttemplate.models.TweetWithUser;
 import com.codepath.apps.restclienttemplate.models.User;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import okhttp3.Headers;
 
 
@@ -36,6 +39,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 20;
     public static final String TAG = "TimelineActivity";
+
     TwitterClient client; // Made into an instance variable to be used in multiple methods
     RecyclerView rvTweets;
     List<Tweet> tweets;
@@ -43,6 +47,7 @@ public class TimelineActivity extends AppCompatActivity {
     SwipeRefreshLayout swipeContainer;
     EndlessRecyclerViewScrollListener scrollListener;
     TweetDao tweetDao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,10 +66,10 @@ public class TimelineActivity extends AppCompatActivity {
 
         client = TwitterApp.getRestClient(this);   // An instance of the twitter client
 
-
         tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
         // Swipe Refresh Layout
         swipeContainer = findViewById(R.id.swipeContainer);        // Configure the refreshing colors
+
         swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
@@ -77,6 +82,7 @@ public class TimelineActivity extends AppCompatActivity {
                 populateHomeTimeline();
             }
         });
+
         // Find the recycler view
         rvTweets = findViewById(R.id.rvTweets);
         // Init the list of tweets and adapter
@@ -101,19 +107,18 @@ public class TimelineActivity extends AppCompatActivity {
 
         // Query for existing tweets in the DB
         AsyncTask.execute(new Runnable() {
-                              @Override
-                              public void run() {
-                                  Log.i(TAG, "Showing dta from database");
-                                  List<TweetWithUser> tweetWithUsers = tweetDao.recentItems();
-                                  List<Tweet> tweetsFromDB = TweetWithUser.getTweetList(tweetWithUsers);
-                                  adapter.clear();
-                                  adapter.addAll(tweetsFromDB);
-                              }
-                          });
+            @Override
+            public void run() {
+                Log.i(TAG, "Showing data from database");
+                List<TweetWithUser> tweetWithUsers = tweetDao.recentItems();
+                List<Tweet> tweetsFromDB = TweetWithUser.getTweetList(tweetWithUsers);
+                adapter.clear();
+                adapter.addAll(tweetsFromDB);
+            }
+        });
         populateHomeTimeline();
-
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -123,7 +128,6 @@ public class TimelineActivity extends AppCompatActivity {
         Drawable icon = getResources().getDrawable(R.drawable.ic_newmessage);    // Saves the drawable as the item, so the vector will now be displayed
         icon.setColorFilter(getResources().getColor(R.color.twitter_blue), PorterDuff.Mode.SRC_IN);   // Colors the vector
         item.setIcon(icon);
-
         return true;
     }
 
@@ -150,13 +154,13 @@ public class TimelineActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
                 Log.i(TAG, "onFailure for loadMoreData!", throwable);
             }
-        }, tweets.get(tweets.size()-1).id);
+        }, tweets.get(tweets.size() - 1).id);
     }
 
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.compose){
+        if (item.getItemId() == R.id.compose) {
             // Compose icon has been selected
 //            Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
             // Navigate to the compose activity
@@ -170,7 +174,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK){ // Operation has succeeded
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) { // Operation has succeeded
             // Get data from the intent (tweet)
             Tweet tweet = Parcels.unwrap(data.getParcelableExtra("tweet"));
             // Update the RV with the tweet
@@ -201,15 +205,14 @@ public class TimelineActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             Log.i(TAG, "Saving data into the database");
-
                             // insert users first
                             List<User> usersFromNetwork = User.fromJsonTweetArray(tweetsFromNetwork);
                             tweetDao.insertModel(usersFromNetwork.toArray(new User[0]));
                             // insert tweets next
                             tweetDao.insertModel(tweetsFromNetwork.toArray(new Tweet[0]));
-
                         }
                     });
+
                 } catch (JSONException e) {
                     Log.e(TAG, "JSON Exception", e);
                 }
@@ -217,9 +220,8 @@ public class TimelineActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-            Log.e(TAG, "onFailure" + response, throwable);
-            // Empty State goes here
-
+                Log.e(TAG, "onFailure" + response, throwable);
+                // Empty State goes here
             }
         });
     }

@@ -21,9 +21,9 @@
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="566dp"
-        
-        android:layout_marginBottom="8dp"
-        android:layout_weight="1"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/userpostpictures_string"
         android:scaleType="centerCrop"
         tools:srcCompat="@tools:sample/avatars" />
@@ -33,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
+        android:layout_below="@id/ivImage"
         tools:text="Description_of_the_post_goes_here" />
 
     <TextView

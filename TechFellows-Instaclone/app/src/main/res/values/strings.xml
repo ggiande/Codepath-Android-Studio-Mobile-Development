@@ -17,4 +17,5 @@
     <string name="userpostpictures_string">UserPostPictures</string>
     <string name="describe_to_me_the_post">Describe_to_me_the_post</string>
     <string name="timestamp_string">Timestamp</string>
+    <string name="content_provider">com.codepath.fileprovider</string>
 </resources>

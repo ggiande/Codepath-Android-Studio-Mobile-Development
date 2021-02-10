@@ -19,6 +19,7 @@ import com.parse.SignUpCallback;
 
 
 public class LoginActivity extends AppCompatActivity {
+
     public static final String TAG = "LoginActivity"; //Tag is used a var to know where we are for debugging
     private EditText etUsername;
     private EditText etPassword;
@@ -68,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         parseUser.signUpInBackground(new SignUpCallback() {
             @Override
             public void done(ParseException e) {
-                // TODO: start new main activity
+                // start new main activity
                 if(e != null) {
                     // better error handling
                     Log.e(TAG, "User creation was unsuccessful", e);
@@ -85,6 +86,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to Log In User: " + username);
+
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
@@ -106,6 +108,5 @@ public class LoginActivity extends AppCompatActivity {
         // Create the intent to go to main activity
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
-
     }
 }

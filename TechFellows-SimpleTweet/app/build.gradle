@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 
-
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
@@ -35,7 +34,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             buildConfigField("String", "CONSUMER_KEY_TWITTER", apikeyProperties['CONSUMER_KEY_TWITTER'])
             buildConfigField("String", "CONSUMER_SECRET_TWITTER", apikeyProperties['CONSUMER_SECRET_TWITTER'])
-
         }
     }
 }
@@ -61,13 +59,12 @@ dependencies {
     // App Tool Bar
     implementation 'androidx.appcompat:appcompat:1.1.0'
     // Edit Text Design
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
     // Parceler
     implementation 'org.parceler:parceler-api:1.1.12'
     annotationProcessor 'org.parceler:parceler:1.1.12'
     // Room for simple persistence with an ORM
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
-
 }
 

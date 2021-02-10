@@ -80,7 +80,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
                     // Notify the listener which position was long pressed
                     longClickListener.onItemLongClicked(getAdapterPosition());
                     return true;
-
                 }
             });
         }

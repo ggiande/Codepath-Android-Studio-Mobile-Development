@@ -9,10 +9,11 @@ import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Parcel
 public class Movie {
-    int movieID; // int id for movie id that is used to identify a video on youtube
 
+    int movieID; // int id for movie id that is used to identify a video on youtube
     String posterPath;
     String title;
     String overview;
@@ -25,7 +26,7 @@ public class Movie {
 
     public Movie(JSONObject jsonObject) throws JSONException {
         backdropPath = jsonObject.getString("backdrop_path");
-        posterPath =jsonObject.getString("poster_path");
+        posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         rating = jsonObject.getDouble("vote_average");
@@ -40,7 +41,6 @@ public class Movie {
             movies.add(new Movie(moviejsonArray.getJSONObject(i)));
         }
         return movies;
-
     }
 
     public String getBackdropPath() {

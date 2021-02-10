@@ -1,20 +1,12 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
-import android.util.Log;
-
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.codepath.oauth.OAuthBaseClient;
 import com.github.scribejava.apis.TwitterApi;
 import com.github.scribejava.core.builder.api.BaseApi;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-
 /*
- * 
  * This is the object responsible for communicating with a REST API. 
  * Specify the constants below to change the API being communicated with.
  * See a full list of supported API classes: 
@@ -39,7 +31,6 @@ public class TwitterClient extends OAuthBaseClient {
 	public static final String REST_CALLBACK_URL_TEMPLATE = "intent://%s#Intent;action=android.intent.action.VIEW;scheme=%s;package=%s;S.browser_fallback_url=%s;end";
 	private static final String TAG = "TwitterClient";
 
-
 	public TwitterClient(Context context) {
 		super(context, REST_API_INSTANCE,
 				REST_URL,
@@ -49,13 +40,12 @@ public class TwitterClient extends OAuthBaseClient {
 				String.format(REST_CALLBACK_URL_TEMPLATE, context.getString(R.string.intent_host),
 						context.getString(R.string.intent_scheme), context.getPackageName(), FALLBACK_URL));
 	}
-	// CHANGE THIS
+
 	// DEFINE METHODS for different API endpoints here
 	public void getHomeTimeline(JsonHttpResponseHandler handler) {
 		String apiUrl = getApiUrl("statuses/home_timeline.json");	// Get the json object
 		// Can specify query string params directly or through RequestParams.
 		RequestParams params = new RequestParams();
-
 		params.put("since_id", 1);
 		params.put("count", 25);
 		client.get(apiUrl, params, handler);

@@ -31,48 +31,18 @@ public class PostsFragment extends Fragment {
     public static final String TAG = "PostsFragment";
     private RecyclerView rvPosts;
     protected PostsAdapter adapter;
+
     protected List<Post> allPosts;
-    private SwipeRefreshLayout swipeContainer;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-
+    public SwipeRefreshLayout swipeContainer;
     public PostsFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PostsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PostsFragment newInstance(String param1, String param2) {
-        PostsFragment fragment = new PostsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -98,8 +68,7 @@ public class PostsFragment extends Fragment {
         rvPosts.setAdapter(adapter);
 
         // Lookup the swipe container view
-        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipeContainer);
-
+        swipeContainer = view.findViewById(R.id.swipeContainer);
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -122,20 +91,24 @@ public class PostsFragment extends Fragment {
     }
 
 
-
     protected void queryPosts() {
         // Specify the class that we will query
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+
         query.include(Post.KEY_USER);
         query.setLimit(20);
         query.addDescendingOrder(Post.KEY_CREATED_AT); // Pass in the timestamp
+
         query.findInBackground((posts, e) -> {
+
             if (e != null) {
                 Log.e(TAG, "Issue with getting posts", e);
                 return;
             }
+
             for (Post post : posts) {
                 Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
+                //Log.i(TAG, "Post: " + post.getCaption() + ", username: " + post.getUser().getUsername());
             }
 
             allPosts.clear();

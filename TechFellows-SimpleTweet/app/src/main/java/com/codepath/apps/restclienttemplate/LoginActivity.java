@@ -33,9 +33,6 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 				sampleModelDao.insertModel(sampleModel);
 			}
 		});
-
-		Toolbar bar  = findViewById(R.id.toolbar);
-//		setSupportActionBar(bar);
 	}
 
 

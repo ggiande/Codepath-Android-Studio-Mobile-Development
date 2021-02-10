@@ -10,15 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f9c82d6-6393-4559-b142-65dce5072896" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flixster/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flixster/DetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flixster/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flixster/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flixster/adapters/MovieAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flixster/adapters/MovieAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TechFellows-Instaclone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-Instaclone/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TechFellows-PreWork/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-PreWork/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TweetsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TweetsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/Tweet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +52,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1ds6ln87AnM5tdEz5OxuqJdQS4e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -154,5 +162,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594654061574" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600842112116">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1600842112116" />
   </component>
 </project>
