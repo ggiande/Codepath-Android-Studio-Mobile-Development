@@ -7,7 +7,7 @@ x86 Harware Accelerated Emulator is much more efficent than most other available
 
 ## Prerequisites
 <img src="images/canary.png" width="125">
-
+Note: Android Stuio Canary is preferred, but not necessary. Android Studio now includes the previous stable and advanced installments of Canary.
 - [Android Studio Canary 8 Build](https://developer.android.com/studio/preview) - Preview release for the latest features and improvements in Android Studio 11.
 
 ### Here are a list of steps to ensure that your machine is fully capable of running Virtualization.
@@ -32,8 +32,7 @@ For the purposes of demonstration, a Gigabyte motherboard would have the SVM (Su
 
 - Save & Exit Setup 
 
-### Should be all done! If steps were completed successfully, Android Studio Canary will now be supported by your CPU.
-
+Should be all done! If steps were completed successfully, Android Studio Canary will now be supported by your CPU. If these steps still do not resovle the issue, know that some motherboards may be too old to suport Virtualization. In that scenario, I would encourage you to look at other posts on StackOverflow!
 
 
 ## Authors
