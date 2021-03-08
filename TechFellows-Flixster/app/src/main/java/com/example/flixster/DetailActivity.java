@@ -41,7 +41,6 @@ public class DetailActivity extends AppCompatActivity {
 
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
-
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
         Log.d("DetailActivity", "ratingBar: " + ratingBar);
@@ -86,6 +85,12 @@ public class DetailActivity extends AppCompatActivity {
                         // do any work here to cue video, play video, etc.
                         youTubePlayer.cueVideo(youtubeKey);
                         Log.d("DetailActivity", "onInitializationSuccess");
+                        Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
+                        if(movie.getRating() >= 7.0){
+                            youTubePlayer.loadVideo(youtubeKey);
+                        } else {
+                            youTubePlayer.cueVideo(youtubeKey);
+                        }
                     }
 
                     @Override

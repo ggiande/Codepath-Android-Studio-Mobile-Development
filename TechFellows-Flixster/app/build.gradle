@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.flixster"
-        minSdkVersion 23
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -41,24 +41,24 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
-    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-//    New Dependencies
+    // Async Client
     implementation 'com.codepath.libraries:asynchttpclient:2.0.0'
-//     Added Recycler View
+    // Added Recycler View
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-//  Glide Dependecies
+    // Glide Dependencies
     implementation 'com.github.bumptech.glide:glide:4.11.0'
-    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-//  Rounded Images
-    implementation 'com.makeramen:roundedimageview:2.3.0'
-//    Parceler
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0' // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    implementation 'jp.wasabeef:glide-transformations:4.1.0' // imports for supported transformations for glide
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.4' // If you want to use the GPU Filters
+    // Parceler
     implementation 'org.parceler:parceler-api:1.1.12'
     annotationProcessor 'org.parceler:parceler:1.1.12'
 }
+
 repositories {
     mavenCentral()
 }

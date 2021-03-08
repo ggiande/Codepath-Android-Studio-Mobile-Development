@@ -21,7 +21,5 @@ public class TweetWithUser {
             tweets.add(tweet);
         }
         return tweets;
-                
-
     }
 }

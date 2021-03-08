@@ -252,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
             // SHOW IT IN MAIN ACTIVITY
             ((TextView)findViewById(R.id.flashcard_Question)).setText(newQuestion);
             ((TextView)findViewById(R.id.flashcard_Answer)).setText(newAnswer);
+
             flashcardDatabase.insertCard(new Flashcard(newQuestion, newAnswer));
             allFlashcards = flashcardDatabase.getAllCards();
 

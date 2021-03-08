@@ -19,10 +19,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
@@ -46,6 +49,6 @@ dependencies {
     // Pull to refresh
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     // Parse
-    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.18.5"
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.25.0"
 
 }

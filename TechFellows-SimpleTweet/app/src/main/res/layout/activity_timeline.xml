@@ -50,4 +50,5 @@
             android:layout_alignParentTop="true" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <resources>
 
     <!--  Twitter Blue  -->
-    <color name="twitter_blue">	#1DA1F2</color>
+    <color name="twitter_blue">#1DA1F2</color>
 
     <color name="toolbar">#233446</color>
     <color name="background">#1b2936</color>

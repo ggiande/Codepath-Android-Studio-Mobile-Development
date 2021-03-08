@@ -1,27 +1,20 @@
 package com.codepath.apps.restclienttemplate;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcel;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
-import com.github.scribejava.apis.TwitterApi;
-
 import org.json.JSONException;
 import org.parceler.Parcels;
-
 import okhttp3.Headers;
 
 public class ComposeActivity extends AppCompatActivity {
-    EditText etCompoe;
+    EditText etCompose;
     Button btnTweet;
     // Add a reference to the witter client (API post call)
     TwitterClient client;
@@ -32,7 +25,7 @@ public class ComposeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose);
-        etCompoe = findViewById(R.id.etCompose);
+        etCompose = findViewById(R.id.etCompose);
         btnTweet = findViewById(R.id.btnTweet);
 
         client = TwitterApp.getRestClient(this);
@@ -43,13 +36,11 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Check for a valid composed tweet
-                final String tweetContent = etCompoe.getText().toString();
+                final String tweetContent = etCompose.getText().toString();
                 if (tweetContent.isEmpty()){
                     Toast.makeText(ComposeActivity.this, "Sorry, your tweet cannot be empty", Toast.LENGTH_LONG).show();
-
                     return;
                 } else if (tweetContent.length() > charMax){
-
                     Toast.makeText(ComposeActivity.this, "Sorry, your tweet is too long", Toast.LENGTH_LONG).show();
                     return;
                 }

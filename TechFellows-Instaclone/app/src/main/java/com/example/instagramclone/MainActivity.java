@@ -28,23 +28,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(menuItem -> {
-            Fragment fragment = new Fragment();
-            // Removed switch case, deprecated since API 14
-            if (menuItem.getItemId() == R.id.action_home){
-                // Update fragment
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                Fragment fragment = new Fragment();
+                // Removed switch case, deprecated since API 14
+                if (menuItem.getItemId() == R.id.action_home) {
+                    // Update fragment
 //                    Toast.makeText(MainActivity.this, "Home Button has been selected", Toast.LENGTH_SHORT).show();
-                fragment = new PostsFragment();
-            } else if (menuItem.getItemId() == R.id.action_profile) {
-                // Update fragment
+                    fragment = new PostsFragment();
+                } else if (menuItem.getItemId() == R.id.action_profile) {
+                    // Update fragment
 //                    Toast.makeText(MainActivity.this, "Profile button has been clicked", Toast.LENGTH_SHORT).show();
-                fragment = new ProfileFragment();
-            } else if (menuItem.getItemId() == R.id.action_compose) {
+                    fragment = new ProfileFragment();
+                } else if (menuItem.getItemId() == R.id.action_compose) {
 //                    Toast.makeText(MainActivity.this, "Compose button has been clicked", Toast.LENGTH_SHORT).show();
-                fragment = new ComposeFragment();
+                    fragment = new ComposeFragment();
+                }
+                fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
+                return true;
             }
-            fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
-            return true;
         });
         // Set default selection
         bottomNavigationView.setSelectedItemId(R.id.action_home);

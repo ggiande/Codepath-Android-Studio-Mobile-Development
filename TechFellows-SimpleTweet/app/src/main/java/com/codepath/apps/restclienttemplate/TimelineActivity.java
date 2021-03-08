@@ -1,11 +1,5 @@
 package com.codepath.apps.restclienttemplate;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -14,11 +8,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.codepath.apps.restclienttemplate.models.SampleModelDao;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.apps.restclienttemplate.models.TweetDao;
 import com.codepath.apps.restclienttemplate.models.TweetWithUser;
@@ -39,7 +36,6 @@ public class TimelineActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 20;
     public static final String TAG = "TimelineActivity";
-
     TwitterClient client; // Made into an instance variable to be used in multiple methods
     RecyclerView rvTweets;
     List<Tweet> tweets;
@@ -79,6 +75,7 @@ public class TimelineActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 Log.i(TAG, "fetching new data!");
+                adapter.clear();
                 populateHomeTimeline();
             }
         });
@@ -102,6 +99,7 @@ public class TimelineActivity extends AppCompatActivity {
                 LoadMoreData();
             }
         };
+
         // Adds the scroll listener to RecyclerView
         rvTweets.addOnScrollListener(scrollListener);
 

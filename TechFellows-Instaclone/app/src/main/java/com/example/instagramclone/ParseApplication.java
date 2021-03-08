@@ -5,8 +5,6 @@ import com.parse.Parse;
 import com.parse.ParseObject;
 
 public class ParseApplication extends Application {
-
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -24,11 +22,6 @@ public class ParseApplication extends Application {
                 .build()
         );
 
-        // OLD USING HEROKU
-//        Parse.initialize(new Parse.Configuration.Builder(this)
-//                .applicationId("gian-parstagram") // should correspond to APP_ID env variable
-//                .clientKey("CPMKOVERPARSEG485645gvyfvg_$^#")  // set explicitly unless clientKey is explicitly configured on Parse server
-//                .server("https://gian-parstagram.herokuapp.com/parse")
-//                .build());
+
     }
 }
