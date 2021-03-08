@@ -21,13 +21,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
 - [ ] Apply data binding for views to help remove boilerplate code. (1 point)
 
-### App Walkthough GIF
-<img src="https://i.imgur.com/POelGIX.gif" width=250><br>
 
 ### App Walkthough GIF
-## Portrait Mode
+#### Portrait Mode
 <img src="https://i.imgur.com/m7k9hZd.gif" width=200><br>
-## Landscape Mode
+#### Landscape Mode
 <img src="https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/blob/master/TechFellows-Flixster/gifs/flixster-portrait.gif" height=200><br>
 
 ### Notes
