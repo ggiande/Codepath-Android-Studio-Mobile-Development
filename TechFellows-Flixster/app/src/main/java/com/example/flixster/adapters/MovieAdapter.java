@@ -89,7 +89,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             // if phone is in landscape mode
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
                 if(movie.getRating() >= 7.0){
-                    Glide.with(context).load(movie.getBackdropPath()).transform(new RoundedCorners(15)).override(575).into(ivPoster);
+                    Glide.with(context).load(movie.getBackdropPath()).placeholder(R.drawable.ic_red_error).transform(new RoundedCorners(15)).override(575).into(ivPoster);
                 // SET VISIBILITY OF POPULAR TVs AND
                     tvTitle.setVisibility(View.GONE);
                     tvOverview.setVisibility(View.GONE);
@@ -97,7 +97,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                     tvTitlePopular.setVisibility(View.VISIBLE);
                     tvOverviewPopular.setVisibility(View.VISIBLE);
                 } else {
-                    Glide.with(context).load(movie.getPosterPath()).transform( new RoundedCornersTransformation(15, 0)).override(250, 400).into(ivPoster);
+                    Glide.with(context).load(movie.getPosterPath()).placeholder(R.drawable.ic_red_error).transform( new RoundedCornersTransformation(15, 0)).override(250, 400).into(ivPoster);
                     tvTitle.setVisibility(View.VISIBLE);
                     tvOverview.setVisibility(View.VISIBLE);
 
@@ -106,7 +106,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 }
             } else {
                 //else image Url  = backdrop image
-                Glide.with(context).load(movie.getBackdropPath()).transform(new FitCenter(), new RoundedCorners(15)).into(ivPoster);
+                Glide.with(context).load(movie.getBackdropPath()).placeholder(R.drawable.ic_red_error).transform(new FitCenter(), new RoundedCorners(15)).into(ivPoster);
 
                 tvTitlePopular.setVisibility(View.GONE);
                 tvOverviewPopular.setVisibility(View.GONE);
