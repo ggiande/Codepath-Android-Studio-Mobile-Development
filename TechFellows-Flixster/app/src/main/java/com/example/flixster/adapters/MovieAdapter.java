@@ -111,8 +111,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 tvTitlePopular.setVisibility(View.GONE);
                 tvOverviewPopular.setVisibility(View.GONE);
             }
-//          1. Register OnClickListener on the whole row (Container)
 
+//          1. Register OnClickListener on the whole row (Container)
             container.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

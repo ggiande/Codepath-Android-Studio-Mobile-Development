@@ -22,7 +22,7 @@ public class DetailActivity extends AppCompatActivity {
     private static final String YOUTUBE_API_KEY = BuildConfig.CONSUMER_KEY;
 
 //  Movie DB API Commented out, in file.
-    private static String VIDEOS_URL = BuildConfig.CONSUMER_SECRET;
+    final private static String VIDEOS_URL = BuildConfig.CONSUMER_SECRET;
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;

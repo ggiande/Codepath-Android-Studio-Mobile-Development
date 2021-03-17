@@ -3,4 +3,5 @@
     <string name="Hello_World_String">Hello World!</string>
     <string name="film_poster_image_string">Film Poster Image</string>
     <string name="playbuttonforpoppularmovies">playButtonForPoppularMovies</string>
+    <string name="youtube_icon_for_splashscreen">YouTube Icon for SplashScreen</string>
 </resources>

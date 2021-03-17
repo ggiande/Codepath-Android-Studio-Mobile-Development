@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:visibility="visible"
+    android:padding="10dp"
     android:background="@color/colorPrimary">
 
     <ImageView
@@ -82,8 +83,6 @@
         android:textColor="@color/White"
         android:visibility="gone"
         tools:text="After he and his wife are murdered, marine Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman, biotech killing machine—'Bloodshot'. As Ray first trains with fellow super-soldiers, he cannot recall anything from his former life." />
-
-
 
 </RelativeLayout>
 
