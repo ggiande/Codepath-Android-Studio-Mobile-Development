@@ -25,7 +25,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthough GIF
 #### Portrait Mode
-<img src="https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/blob/master/TechFellows-Flixster/gifs/flixster-portrait.gif" width=250><br>
+<img src="https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/blob/master/TechFellows-Flixster/gifs/flixster-portrait-splash.gif" width=250><br>
 #### Landscape Mode
 <img src="https://github.com/ggiande/Codepath-Android-Studio-Mobile-Development/blob/master/TechFellows-Flixster/gifs/flixster-land.gif" height=250><br>
 
