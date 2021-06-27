@@ -9,6 +9,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.flixster.MainActivity;
 import com.example.flixster.R;
@@ -18,8 +19,13 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //remove title
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        // Make this activity, full screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // Hide the Title bar of this activity screen
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_splash_screen);
 
         final Handler handler = new Handler();

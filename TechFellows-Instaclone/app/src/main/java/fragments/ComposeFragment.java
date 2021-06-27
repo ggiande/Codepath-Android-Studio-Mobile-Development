@@ -223,6 +223,4 @@ public class ComposeFragment extends Fragment {
             }
         });
     }
-
-
 }

@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     public static final int EDIT_TEXT_CODE = 20;
 
     List<String> items;
-
     Button btnAdd;
     EditText etItem;
     RecyclerView rvItems;
@@ -45,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
         etItem = findViewById(R.id.etItem);
         rvItems = findViewById(R.id.rvitems);
         loadItems();
-//        etItem.setText("Im doing this from the java file.");
-//         new Empty Array List
-//        items = new ArrayList<>();
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
             @Override
@@ -58,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 itemsAdapter.notifyItemRemoved(position);
 //                Snackbar.make(findViewById(R.id.btnAdd),"Item successfully removed ", Snackbar.LENGTH_SHORT).show();
                 Toast.makeText(getApplicationContext(), "Item was removed", Toast.LENGTH_SHORT).show();
-
                 saveItems();
 
             }

@@ -174,6 +174,8 @@ public class MainActivity extends AppCompatActivity {
                 final Animation leftOutAnim = AnimationUtils.loadAnimation(v.getContext(), R.anim.goouttotheleft);
                 final Animation rightInAnim = AnimationUtils.loadAnimation(v.getContext(), R.anim.infromtheright);
 
+                if (allFlashcards.size() == 0)
+                    return;
 
                 findViewById(R.id.flashcard_Question).startAnimation(leftOutAnim);
                 // 3 poss answers for question would go here as well.

@@ -12,11 +12,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="138dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:text="@string/hello_from_giancarlo"
         android:textColor="@android:color/black"
 
@@ -43,9 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-
         android:layout_marginEnd="19dp"
-        android:layout_marginBottom="181dp" />
+        android:text="RESET"
+        android:layout_marginBottom="184dp" />
 
     <Button
         android:id="@+id/paintBackground"

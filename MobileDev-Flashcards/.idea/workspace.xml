@@ -14,31 +14,17 @@
   <component name="ChangeListManager">
     <list default="true" id="952e8ecf-2006-46e7-acf6-4f3dd00616c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlashingSquirrels/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashingSquirrels/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlashingSquirrels/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashingSquirrels/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlashingSquirrels/app/src/main/java/com/example/flashingsquirrel/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlashingSquirrels/app/src/main/java/com/example/flashingsquirrel/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlashingSquirrels/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FlashingSquirrels/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlashingSquirrels/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FlashingSquirrels/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/DetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/layout/item_movie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/layout/item_movie.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileDev-PreWork/HelloWorld/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/splashscreen/SplashScreenActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/java/com/example/flixster/splashscreen/SplashScreenActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Flixster/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/ParseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/ParseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/PostsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/com/example/instagramclone/PostsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/fragments/ComposeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/app/src/main/java/fragments/ComposeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-Instaclone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-Instaclone/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/ComposeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/ComposeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/TweetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/TweetDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/TweetWithUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/java/com/codepath/apps/restclienttemplate/models/TweetWithUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/res/layout/activity_timeline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/res/layout/activity_timeline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-SimpleTweet/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/java/com/example/simpletodo/EditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/java/com/example/simpletodo/EditActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/java/com/example/simpletodo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/java/com/example/simpletodo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TechFellows-PreWork/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,29 +64,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="274" key="#Project_Structure" timestamp="1607553657383">
+    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1617595638620">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="760" y="274" key="#Project_Structure/-1920.185.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607553657383" />
-    <state x="-1180" y="635" key="FileChooserDialogImpl" timestamp="1615017062444">
-      <screen x="-1920" y="360" width="1920" height="1040" />
-    </state>
-    <state x="-1180" y="635" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@-1920.360.1920.1040" timestamp="1615017062444" />
-    <state width="1606" height="225" key="GridCell.Tab.0.bottom" timestamp="1607553621139">
-      <screen x="-1920" y="185" width="1920" height="1040" />
-    </state>
-    <state width="1606" height="225" key="GridCell.Tab.0.bottom/-1920.185.1920.1040/0.0.2560.1400@-1920.185.1920.1040" timestamp="1607553621139" />
-    <state width="1606" height="225" key="GridCell.Tab.0.center" timestamp="1607553621139">
-      <screen x="-1920" y="185" width="1920" height="1040" />
-    </state>
-    <state width="1606" height="225" key="GridCell.Tab.0.center/-1920.185.1920.1040/0.0.2560.1400@-1920.185.1920.1040" timestamp="1607553621139" />
-    <state width="1606" height="225" key="GridCell.Tab.0.left" timestamp="1607553621138">
-      <screen x="-1920" y="185" width="1920" height="1040" />
-    </state>
-    <state width="1606" height="225" key="GridCell.Tab.0.left/-1920.185.1920.1040/0.0.2560.1400@-1920.185.1920.1040" timestamp="1607553621138" />
-    <state width="1606" height="225" key="GridCell.Tab.0.right" timestamp="1607553621139">
-      <screen x="-1920" y="185" width="1920" height="1040" />
-    </state>
-    <state width="1606" height="225" key="GridCell.Tab.0.right/-1920.185.1920.1040/0.0.2560.1400@-1920.185.1920.1040" timestamp="1607553621139" />
+    <state x="-1180" y="635" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@-1920.360.1920.1040" timestamp="1616889033347" />
+    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1617595638620" />
   </component>
 </project>
